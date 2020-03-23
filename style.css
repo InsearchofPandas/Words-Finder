@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+@font-face {
+  font-family: 'DINPro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro Medium'),
+    url('./fonts/DINPro-Medium\ tr.woff') format('woff');
+}
+@font-face {
+  font-family: 'DINPro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro Light'),
+    url('./fonts/DINPro-Light.woff') format('woff');
+}
+
+h1 {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+body {
+  background-color: #bebebe;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+small {
+  text-align: center;
+  font-family: 'DINPro Medium';
+  font-size: 22px;
+  margin: 10px;
+}
+
+p {
+  font-size: 22px;
+  font-family: 'Assistant', sans-serif;
+  text-indent: 50px;
+}
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  color: #fff;
+  font-family: 'DINPro Light';
+  font-weight: normal;
+}
+
+.title-container {
+  display: flex;
+  justify-content: start;
+  width: 100vw;
+  padding-left: 80px;
+}
+
+.input-container input {
+  width: 80vw;
+  max-width: 1200px;
+  font-size: 42px;
+  padding: 20px;
+  font-family: 'DINPro Light';
+}
+
+.small-s {
+  font-size: 35px;
+}
+
+.text-container {
+  margin: 40px;
+  max-width: 1200px;
+  background-color: #cbcbcb;
+  padding: 50px;
+}
+
+/* //////////////////Footer//////////////////////// */
+
+#footerCenter {
+  position: fixed;
+  bottom: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #4a5568;
+  font-family: 'DINPro Medium';
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#footerText {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footerText:hover {
+  color: #56a5eb;
+}
