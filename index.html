@@ -13,21 +13,28 @@
     <div class="title-container">
       <h1>WORD<span class="small-s">(s)</span> FINDER</h1>
     </div>
-
+    <small class="instructions"
+      >Enter letters to search and see them highlighted in
+      text bellow</small
+    >
     <div class="input-container">
       <input
         type="text"
+        id="input-text"
         placeholder="Search Document Text..."
       />
+      <div class="toggle">
+        <label class="container"
+          >Case Sensitive
+          <input id="toggler" type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
     </div>
-    <small class="instructions"
-      >Enter words to search and see them highlighted in
-      text bellow</small
-    >
   </div>
 
   <body>
-    <div class="text-container">
+    <div id="text-body" class="text-container">
       <p>
         At this year's Golden Globes awards, host Ricky
         Gervais joked about Martin Scorsese’s now famous
@@ -136,10 +143,15 @@
         that wishes to remain blind to tragedy, and ignorant
         of the lessons that tragedy can teach us all.
       </p>
+      <p>-KH</p>
     </div>
   </body>
   <footer id="footerCenter">
     <div id="footer">
+      <small>
+        This solution is neither secure or fullproof as it
+        allows acces to this pages innerHTML
+      </small>
       <a
         href="https://kylehumphrey.com"
         target="_blank"
@@ -149,7 +161,7 @@
         Made by Kyle Humphrey
       </a>
       <a
-        href="https://github.com/InsearchofPandas/Movie-Seat-Booking"
+        href="https://github.com/InsearchofPandas/Words-Finder"
         target="_blank"
         rel="noopener noreferrer"
         id="footerText"
@@ -168,5 +180,5 @@
     </div>
   </footer>
 
-  <script src="srcipt.js"></script>
+  <script src="script.js"></script>
 </html>
